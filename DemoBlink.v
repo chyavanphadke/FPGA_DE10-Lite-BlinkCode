@@ -13,7 +13,7 @@ always @ (posedge clk) begin
 cnt <= cnt + 1;
 end
 
-	
+assign LED[0] = cnt[24];
 assign LED[9:1] = 9'b000000000;
 
 endmodule
